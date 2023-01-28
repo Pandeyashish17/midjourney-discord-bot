@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits } = require("discord.js");
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "openai_key",
 });
 const openai = new OpenAIApi(configuration);
 
@@ -34,4 +34,4 @@ client.on("messageCreate", async (msg) => {
   }
 })
 
-client.login("MTA2ODkwMzcwNTkyMDkzODE4NQ.GUjF7Z.T-i-wDmiUAqaQdOIV0G6N_GFs1pUhhxOl0Yf5s")
+client.login("token")
